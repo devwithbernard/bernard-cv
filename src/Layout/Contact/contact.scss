@@ -1,0 +1,372 @@
+@import "../../colors";
+@import "../../fonts";
+
+*{
+  font-family: $open-sans;
+}
+
+.contactUS{
+  padding: 1rem;
+  position: relative;
+  min-width: 100%;
+  margin: 2rem 1rem;
+  box-shadow: 0 0 2px #444;
+  border-radius: 8px;
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .title h2{
+    font-size: 1.75rem;
+    color: $purple-700;
+    font-weight: 600;
+  }
+}
+
+.box{
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas:
+    "form info"
+    "form map";
+  grid-gap: 15px;
+  .contact{
+    padding: 1rem;
+  }
+
+  .form{
+    grid-area: form;
+  }
+
+  .contact h3{
+    color: darkblue;
+    font-weight: 500;
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+  }
+
+  .info{
+    grid-area: info;
+    border: 1px solid darkblue;
+  }
+
+  .map{
+    grid-area: map;
+  }
+
+  // FormBox
+  .formBox{
+     position: relative;
+    width: 100%;
+  }
+
+  .formBox .row50{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+  .formBox .row100 .inputBox{
+    width: 100%;
+  }
+
+  .inputBox span{
+    color: $purple-600;
+    margin:0.5rem 0;
+    font-weight: 500;
+  }
+
+  .inputBox input{
+    padding: 10px;
+    font-size: 1.125rem;
+    outline: none;
+  }
+
+  .inputBox textarea{
+    padding: 10px;
+    font-size: 1.125rem;
+    outline: none;
+    border: 1px solid $purple-600;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputBox input[type="submit"]{
+    background: #ff578b;
+    border: none;
+    color: white;
+    font-size: inherit;
+    max-width: 150px;
+    padding: 8px 18px;
+  }
+
+  .inputBox ::placeholder{
+    color: darkblue;
+  }
+
+  // Info
+  .info{
+    background-color: $purple-900;
+  }
+
+  .info h3{
+    color: #fff;
+  }
+
+  .info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin:1rem 0;
+    color: #fff;
+  }
+
+  .info .infoBox div span{
+    margin-right: 15px;
+    color: $purple-900;
+    min-width: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    border-radius: 50%;
+  }
+
+  .info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .sci{
+    margin-top:3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .sci li{
+    margin: 0 0.5rem;
+    font-size: 1.75rem;
+    transition: all 500ms ease-in-out;
+  }
+
+  .sci li:hover{
+    transform: translateY(-8px) scale(1.1);
+    a{
+      color: #ccc;
+    }
+  }
+
+  .sci li a{
+    color: white;
+    font-size: 1.75rem;
+    cursor: pointer;
+  }
+
+  .map{
+    padding: 0;
+  }
+  .map iframe{
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .home-content{
+    margin: 0;
+    padding: 0;
+  }
+  .contactUS{
+    padding: 0.5rem 2rem;
+    min-width: 100%;
+    margin: 2rem 1rem;
+    box-shadow: 0 0 2px #444;
+    border-radius: 8px;
+    .title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .title h2{
+      font-size: 1.5rem;
+      color: $purple-700;
+      font-weight: 600;
+    }
+  }
+
+  .box{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    .contact{
+      padding: 1rem;
+    }
+
+    .form{
+      grid-area: form;
+    }
+
+    .contact h3{
+      color: darkblue;
+      font-weight: 500;
+      font-size: 1.45rem;
+      margin-bottom: 10px;
+    }
+
+    .info{
+      grid-area: info;
+      border: 1px solid darkblue;
+    }
+
+    .map{
+      grid-area: map;
+    }
+
+    // FormBox
+    .formBox{
+      position: relative;
+      width: 100%;
+    }
+
+    .formBox .row50{
+      display: flex;
+      gap: 1rem;
+    }
+
+    .inputBox{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      width: 50%;
+    }
+
+    .formBox .row100 .inputBox{
+      width: 100%;
+    }
+
+    .inputBox span{
+      color: $purple-600;
+      margin:0.5rem 0;
+      font-weight: 500;
+    }
+
+    .inputBox input{
+      padding: 10px;
+      font-size:1rem;
+      outline: none;
+    }
+
+    .inputBox textarea{
+      padding: 10px;
+      font-size: 1.125rem;
+      outline: none;
+      border: 1px solid $purple-600;
+      resize: none;
+      min-height: 220px;
+      margin-bottom: 0.5rem;
+    }
+
+    .inputBox input[type="submit"]{
+      background: #ff578b;
+      border: none;
+      color: white;
+      font-size: inherit;
+      max-width: 150px;
+      padding: 8px 18px;
+    }
+
+    .inputBox ::placeholder{
+      color: darkblue;
+    }
+
+    // Info
+    .info{
+      background-color: $purple-900;
+    }
+
+    .info h3{
+      color: #fff;
+    }
+
+    .info .infoBox div{
+      display: flex;
+      align-items: center;
+      margin:1rem 0;
+      color: #fff;
+    }
+
+    .info .infoBox div span{
+      margin-right: 15px;
+      color: $purple-900;
+      min-width: 40px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.4rem;
+      border-radius: 50%;
+    }
+
+    .info .infoBox div a{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .sci{
+      margin-top:3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style-type: none;
+    }
+
+    .sci li{
+      margin: 0 0.5rem;
+      font-size: 1.75rem;
+      transition: all 500ms ease-in-out;
+    }
+
+    .sci li:hover{
+      transform: translateY(-8px) scale(1.1);
+      a{
+        color: #ccc;
+      }
+    }
+
+    .sci li a{
+      color: white;
+      font-size: 1.75rem;
+      cursor: pointer;
+    }
+
+    .map{
+      padding: 0;
+    }
+    .map iframe{
+      border: none;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+}

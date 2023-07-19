@@ -1,0 +1,33 @@
+.skills-container{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.home-container{
+  padding: 0 !important;
+  .home-content{
+  }
+}
+
+
+.max-width{
+  min-width: 100vw !important;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 992px){
+  .skills-container{
+    grid-template-columns: repeat(2,auto);
+    place-content: center;
+  }
+}
+
+@media screen and (max-width: 676px){
+  .skills-container{
+    grid-template-columns: repeat(1,auto);
+    place-content: center;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../fonts";
+@import "../../colors";
+
+
+
+.home-topbar{
+  font-family: $open-sans;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  transition: all 500ms ease-in-out;
+  &:hover {
+    box-shadow: 0 4px 5px $purple-300;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  
+}
