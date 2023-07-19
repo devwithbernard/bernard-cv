@@ -4,7 +4,7 @@ import App from './App';
 import './reset.scss';
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {Home, Skills, Portfolio, Contact} from "./Layout";
+import {Home, Skills, Contact} from "./Layout";
 
 export const navigation = [{
     path:"/" || "/home",
